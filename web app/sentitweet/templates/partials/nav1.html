@@ -1,0 +1,84 @@
+ {% load static %}
+<!--Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light py-4p" id="main-nav">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand">
+          
+          <h3 class="d-inline align-middle">SENTITWEETS</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="{% url 'index' %}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'about' %}" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'dashboard' %}" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-white dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Administration
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Update Configuration</a>
+                <a class="dropdown-item" href="#">Start Analysis</a>
+                <a class="dropdown-item" href="#">Add New User</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ml-2">
+              <button
+                class="btn btn-white dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Reports
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ml-2">
+              <button
+                class="btn btn-white dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                My account
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="{% url 'index' %}" class="nav-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>

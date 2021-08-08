@@ -1,0 +1,108 @@
+{% extends 'test.html' %}
+{% block content %}
+
+ 
+    <!-- Header -->
+    <header id="main-header" class="py-2 login-admin-panel">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1><i class="fas fa-user"></i> Dashboard</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="boxes" class="py-5">
+      <div class="container">
+        <div class="row">
+          <a href="{% url 'configure' %}" class="col-md-3">
+            <div class="card text-center border-primary mb-resp p-4">
+              <div class="dash-one">
+                <h3 class="text-dash">Configuration Management</h3>
+              </div>
+            </div>
+        </a>
+          <a href="{% url 'analysis' %}" class="col-md-3">
+            <div class="card text-center border-primary mb-resp p-4">
+              <div class="dash-one">
+                <h3 class="text-dash">Sentiment Analysis</h3>
+              </div>
+            </div>
+        </a>
+          <a class="col-md-3" href="{% url 'history' %}">
+            <div class="card text-center border-primary mb-resp p-4">
+              <div class="dash-one">
+                <h3 class="text-dash">Analysis History</h3>
+              </div>
+            </div>
+          </a>
+          
+          <a href="{% url 'index' %}" class="col-md-3">
+            <div class="card text-center border-primary mb-resp p-4">
+              <div class="dash-one">
+                <h3 class="text-dash">Logout</h3>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+         <section id="newsletter" class="text-center p-5 bg-dark text-white">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>CONTACT INFO:</li>
+              <li>Kathmandu,Nepal</li>
+              <li> <i class="fas fa-phone"></i>Phone:9861099370</li>
+              <li><i class="fas fa-envelope-open"></i>Email Us:xyz@gmail.com </li>
+              <li> <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 ">
+            <ul class="list-unstyled">
+              <li>MODULES:</li>
+              <li>Analysis</li>
+              <li>User Modules</li>
+              <li>Configuration Module</li>
+              <li>Login Module</li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li>PROJECT LINKS:</li>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Login</li>
+            </ul>
+          </div>
+
+          
+           
+         
+
+          
+
+      
+    </section>
+
+{% endblock %}

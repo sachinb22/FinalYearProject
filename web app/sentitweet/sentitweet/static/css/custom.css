@@ -1,0 +1,34 @@
+.home-heading {
+  margin-top: -10vh;
+  color: #92918e;
+  text-align: center;
+}
+.card1 {
+  background: url(../img/twitter1.jpg);
+  background-size: cover;
+}
+.card3 {
+  background: url(../img/twitter2.png);
+  background-size: cover;
+}
+ul {
+  list-style: none;
+}
+.login-admin-panel {
+  background: #5da1d6;
+  color: white;
+ 
+}
+.dash-one {
+  background: #5da1d6;
+  height: 30vh;
+  border-radius: 50%;
+}
+.text-dash {
+  color: white;
+  margin-top: 10vh;
+}
+.chart-image{
+  height: 90vh;
+}
+
